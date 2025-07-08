@@ -27,7 +27,9 @@ E --> F[Reconstructed CSI<br>Real/Imag Combination]
 | **Decoder**      | Linear(16→64) → Unflatten → ConvTranspose2d(16→8) → ReLU → ConvTranspose2d(8→2) → Tanh | (2×8×8) |
 
 ### Loss Function
-$$\mathcal{L} = \underbrace{\|\mathbf{x} - \mathbf{\hat{x}}\|^2}_{\text{Reconstruction}} + \beta \underbrace{D_{KL}\left(q(\mathbf{z}|\mathbf{x}) \parallel p(\mathbf{z})\right)}_{\text{Regularization}}$$
+
+L = ||x - x̂||² (Reconstruction)
+  + β * D_KL(q(z|x) || p(z)) (Regularization)
 
 Where:
 - $q(\mathbf{z}|\mathbf{x})$ is the encoder's Gaussian distribution
