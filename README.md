@@ -1,0 +1,2 @@
+# Telecom-GenAI-ML-PoC--VAE-for-CSI-Feedback-Proof-of-Concept
+This proof of concept demonstrates a Variational Autoencoder (VAE) for compressing Channel State Information (CSI) feedback in massive MIMO systems. The VAE learns to encode CSI measurements into a compressed latent representation that can be efficiently transmitted to the base station, where it's decoded to reconstruct the original CSI.
